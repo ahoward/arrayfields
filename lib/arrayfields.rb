@@ -5,7 +5,7 @@
 # Array#fields= is called
 #
   module ArrayFields 
-    self::VERSION = '4.7.4' unless defined? self::VERSION
+    self::VERSION = '4.8.0' unless defined? self::VERSION
     def self.version() Arrayfields::VERSION end
   #
   # multiton cache of fields - wraps fields and fieldpos map to save memory
@@ -294,7 +294,7 @@
 #
   module Fieldable
   #
-  # sets fields an dynamically extends this Array instance with methods for
+  # sets fields and dynamically extends this Array instance with methods for
   # keyword access
   #
     def fields= fields
