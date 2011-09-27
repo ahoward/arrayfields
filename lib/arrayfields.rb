@@ -5,8 +5,17 @@
 # Array#fields= is called
 #
   module ArrayFields 
-    self::VERSION = '4.8.0' unless defined? self::VERSION
+    self::VERSION = '4.9.0' unless defined? self::VERSION
     def self.version() Arrayfields::VERSION end
+
+    class << self
+      def index(list)
+        index = list.dup
+      ensure
+        index.fields = list
+      end
+    end
+
   #
   # multiton cache of fields - wraps fields and fieldpos map to save memory
   #
