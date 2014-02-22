@@ -3,7 +3,7 @@
 
 Gem::Specification::new do |spec|
   spec.name = "arrayfields"
-  spec.version = "4.9.1"
+  spec.version = "4.9.2"
   spec.platform = Gem::Platform::RUBY
   spec.summary = "arrayfields"
   spec.description = "string/symbol keyword access to arrays"
@@ -34,8 +34,7 @@ Gem::Specification::new do |spec|
 
   spec.test_files = "test/arrayfields.rb"
 
-### spec.add_dependency 'lib', '>= version'
-#### spec.add_dependency 'map'
+  
 
   spec.extensions.push(*[])
 

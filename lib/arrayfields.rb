@@ -5,7 +5,7 @@
 # Array#fields= is called
 #
   module ArrayFields 
-    self::VERSION = '4.9.1' unless defined? self::VERSION
+    self::VERSION = '4.9.2' unless defined? self::VERSION
     def self.version() Arrayfields::VERSION end
 
     def ArrayFields.description
